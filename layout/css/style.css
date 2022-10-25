@@ -1,0 +1,73 @@
+body {
+    font-family: 'Poppins',sans-serif;
+}
+
+.container {
+    background:#999999;
+    width: 70%;
+    /*centro il contenitore con i margini automatici*/
+   
+    /* margin-left: auto;
+    margin-right: auto; */
+
+    margin:0 auto; /*versione abbreviata: primo valore per sopra/sotto e secondo valore per sinistra/destra*/
+
+    /*posso fornire su una sola riga i margini per i 4 lati: TOP | RIGHT | BOTTOM | LEFT
+    AD ESEMPIO: 
+    margin: 30px auto 100px auto;
+    */
+
+
+}
+
+main { /*selettore per TAG: tutti i tag di questo tipo prenderanno questa regola!*/
+    width:80%;
+    padding:1rem;
+}
+
+.box {
+    background:#25688c;
+    color:#efefef;
+    font-weight: bold;
+    width:50%;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+   
+}
+
+h1, h2, h3 {
+    font-family: 'Source Serif Pro',serif;
+}
+
+h1 {
+    font-size: 3rem;
+    color:green;
+}
+
+.titleIntro {
+    font-size: 0.5em;
+}
+
+h2 {
+
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 2rem;
+    color:red;
+}
+
+#mainFooter p {
+    /*Tutti i paragrafi DENTRO l'elemento con ID #mainFooter*/
+    color:#333;
+    font-size: 0.85rem;
+}
+
+#mainFooter p a { /*tutti i link dentro P e dentro #mainFooter*/
+
+    font-weight: bold;
+}

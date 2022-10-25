@@ -1,0 +1,272 @@
+/*regole che valgono per tutte le dimensioni schermo*/
+
+* { /*impostare un box model dove il PADDING non allarga l'elemento*/
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Figtree', sans-serif;
+    background:#efefef;
+    color:#222;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+a {
+    color:#3B95DC;
+}
+
+
+img {
+    width: 100%; /*faccio allargare TUTTE le immagini al 100% del contenitore*/
+    height:auto;
+  }
+
+.container {
+    width: 92%;
+    margin:0 auto;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                HEADER E LOGO                               */
+/* -------------------------------------------------------------------------- */
+
+.logo {
+    text-align: center;
+}
+
+.logo img{
+    width: 4rem;
+}
+
+.mainMenu ul {
+    list-style-type: none;
+    text-align: center;
+    padding-left: 0;
+}
+
+.mainMenu li {
+    padding:1rem 0;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                HERO SECTION                                */
+/* -------------------------------------------------------------------------- */
+
+#hero {
+    background-image:url('../img/background_mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    height:80vh;
+
+    /*ALLINEO IL DIV "Call To Action"*/
+    display: flex;
+
+    /*allineo sull'asse principale */
+    justify-content: center;
+
+    /*allineamento sul cross-axis (verticale)*/
+    align-items: center;
+
+    text-align: center; /*proprietà ereditata anche dal div .callToAction*/
+
+    margin-bottom: 3rem;
+
+}
+
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                               SEZIONE OFFERTE                              */
+/* -------------------------------------------------------------------------- */
+
+.offerta {
+    margin-bottom: 4rem; /*spazio in fondo alla singola offerta */
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               SEZIONE GALLERY                              */
+/* -------------------------------------------------------------------------- */
+
+.galleryItem img {
+    /* uso display:block sulle immagini per evitare spazi indesiderati sotto le foto */
+    display: block;
+    padding:0.5rem;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                STILI FOOTER                                */
+/* -------------------------------------------------------------------------- */
+
+.mainFooter {
+    background:#19405e;
+    color:#efefef;
+
+    padding:1rem;
+
+    text-align: center;
+}
+
+.footerInfo, .footerSocial {
+    margin-bottom: 1rem;
+}
+
+.mainFooter a {
+    color:#b1d3ee;
+}
+
+.mainFooter .bi {
+    /*tutte le icone (classe .bi) dentro .mainFooter*/
+    font-size: 1.5rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                           STILI PER SCHERMI MEDI                           */
+/* -------------------------------------------------------------------------- */
+
+
+
+@media screen and (min-width:768px) {
+
+    .headerWrapper {
+        display: flex;
+        /*allineo sull'asse principale, dispongo agli estremi opposti*/
+        justify-content: space-between;
+        /*allineo sull'asse incrociato (V) al centro*/
+        align-items: center;
+    }
+
+    /*MENU*/
+    .mainMenu ul {
+        display: flex;
+    }
+
+    .mainMenu li {
+        padding:1rem 1.5rem;
+    }
+
+    .galleryWrapper {
+        display: flex;
+        flex-wrap: wrap; /*quando finisci lo spazio, vai a capo!*/
+    }
+
+    .galleryItem {
+        width:50%;
+    }
+
+    /*FOOTER*/
+
+    .footerWrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .footerInfo {
+        width:50%;
+        text-align: left;
+    }
+
+    .footerSocial {
+        width: 100%;
+        order:1;
+
+    }
+
+    .footerCredits {
+        width:50%;
+        text-align: left;
+    }
+
+    
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                        STILI PER SCHERMI PIU GRANDI                        */
+/* -------------------------------------------------------------------------- */
+
+@media screen and (min-width:992px) {
+    
+
+    .container {
+        width: 80%;
+        /* margin:0 auto; non serve perché è già definita sopra */
+    }
+
+    #hero {
+        background-image:url('../img/background_desktop.jpg');
+    }
+
+
+    /*STILI OFFERTE PER SCHERMI GRANDI */
+
+    .offerta {
+        display: flex;
+    }
+
+    .offertaImg {
+        width:33.33%;
+    }
+
+
+
+    .offertaTxt {
+        width:66.66%;
+        padding-left: 2rem;
+    }
+
+    /*STILI GALLERY*/
+
+    .galleryItem {
+        width:33.33%;
+    }
+
+    /*FOOTER*/
+
+    .footerInfo {
+        width:33.33%;
+        text-align: left;
+    }
+
+    .footerSocial {
+        width: 33.3%;
+        text-align: center;
+
+        order:0; /* riporto a default la proprietà ORDER che ho dichiarato nel breakpoint precedente */
+        
+    }
+
+    .footerCredits {
+        width:33.33%;
+        text-align: right;
+    }
+
+
+}
+
+/* -------------------------------------------------------------------------- */
+/*                    STILI PER SCHERMI ANCORA PIU GRANDI!                    */
+/* -------------------------------------------------------------------------- */
+
+@media screen and (min-width:1200px) {
+
+    /*stili galleria*/
+    .galleryItem {
+        width:25%;
+    }
+}

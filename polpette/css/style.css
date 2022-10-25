@@ -1,0 +1,117 @@
+body {
+    font-family: 'Noto Serif',serif;
+    /*imposto una famiglia di font di default per tutto il documento */
+    /*per lo sfondo ripetuto basta un'immagine, la ripetizione è il default*/
+    /*background: url('../images/pattern.jpg');*/
+
+    /*sfondo full screen*/
+
+    background: url('../images/sfondo.jpg');
+    background-repeat: no-repeat; /*sfondo che NON si ripete!*/
+    background-position: center center; /*centro il background in ORIZZONTALE e VERTICALE*/
+    background-attachment: fixed; /*non spostare il background con la pagina*/
+    background-size: cover; /*ritaglia il background in modo da occupare sempre lo spazio senza lasciare vuoti*/
+
+}
+
+img {
+    width:100%;
+    /*TUTTE le immagini si allargano per occupare tutto lo spazio disponibile*/
+   /* se non voglio allargarle ma voglio solo renderle fluide mantenendo la loro
+   dimensione nativa, posso usare:
+   max-width: 100%; /*l'immagine sarà larga AL MASSIMO come il suo genitore.
+   Così la rendo fluida.*/
+
+    height: auto;
+}
+
+h1 {
+    font-size: 3rem; /*tre volte più grande del font base (default del browser)*/
+}
+
+h1, h2, h3 {
+    /*assegno lo stesso font a h1,h2,h3 */
+    font-family: 'Fira Sans',sans-serif;
+}
+
+
+
+h1 .subtitle {
+    font-size: 1.5rem;
+    font-weight: normal;
+    font-style: italic;
+    font-family: 'Noto Serif',serif;
+}
+
+h2 .subtitle {
+    font-size: 1rem;
+    font-weight: normal;
+    font-family: 'Noto Serif',serif;
+}
+
+a {
+    color:#d06100;
+}
+
+.container {
+    width: 70%;
+    margin:0 auto;
+    background: rgba(255,255,255,0.7);
+
+    /*oppure posso usare la sintassi esadecimale*/
+    /*background: #FFFFFF99 */
+    /* l'ultima coppia di valori determina la trasparenza*/
+
+    padding:1rem;
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    
+   
+}
+
+.step {
+    background: #EA9409;
+    font-size: 1.25rem;
+    
+    font-family: 'Fira Sans',sans-serif;
+     /*posso assegnare lo spessore del font anche con un valore numerico: */
+    font-weight: 700;
+    color:#ffffff;
+    padding:0.2rem;
+    border-radius:50%; /*un valore 50% crea un cerchio o un ovale*/
+
+    /*modalità che conserva la proprietà in linea, ma supporta larghezza e altezza*/
+    display: inline-block; 
+    
+    /*forzo un'altezza e una larghezza*/
+    width:1.25rem;
+    height:1.25rem;
+
+    /*allineo al centro*/
+    text-align: center;
+
+    /*aggiungo una leggera ombra al testo*/
+    text-shadow: 1px 1px 0px #985b00;
+
+    /*aggiungo un'ombra all'elemento*/
+    box-shadow: 1px 1px 2px #b26b00;
+
+
+
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   FOOTER                                   */
+/* -------------------------------------------------------------------------- */
+
+.mainFooter {
+    text-align: center;
+}
+
+.mainFooter a {
+    /*elimino il sottolineato dei link*/
+    text-decoration: none;
+
+}
+

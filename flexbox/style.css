@@ -1,0 +1,66 @@
+.container {
+    display: flex;
+     /*valori di default*/
+
+     /*imposto l'asse principale - ROW=orizzontale*/
+    /*flex-direction: row;*/
+
+    /*dispongo gli elementi sul main axis*/
+    /*justify-content: flex-start;*/
+   
+    /*dispongo sul cross-axis*/
+    /*align-items: stretch;*/
+    /*di default, allunga gli elementi per occupare tutto lo spazio sul cross-axis*/
+
+    /*se voglio allineare diversamente:*/
+
+    align-items: center; /*allineo sul CROSS-AXIS*/
+    
+    
+    
+
+    
+} 
+
+
+
+#box-1 {
+    background: #ff9999;
+    width:20%;
+  
+   
+    
+}
+
+#box-2 {
+    background: #66ff33;
+    width:60%;
+    
+    
+   
+}
+
+#box-3 {
+    background: #32a7e2;
+    width:20%;
+    
+
+}
+
+.gallery {
+    display: flex;
+    /*di default, Flexbox non va a capo se finisce lo spazio.*/
+    
+    /*vai a capo quando finisci lo spazio*/
+    flex-wrap: wrap;
+    /*per disattivarlo basta lasciare il default flex-wrap:nowrap*/
+}
+
+.galleryItem {
+    width: 33.3333%;
+}
+
+.galleryItem img {
+    max-width: 100%; /*rendo l'immagine fluida*/
+    height:auto;
+}

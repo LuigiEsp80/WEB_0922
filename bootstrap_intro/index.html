@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Bootstrap Intro</title>
+</head>
+<body>
+    <!-- <h1>Lorem, ipsum.</h1>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sit est corporis quas nesciunt hic officiis rem perferendis. At ratione facere necessitatibus soluta inventore tempore iste quo, architecto sed! Minus?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum beatae quasi quas alias animi quam tempora. Temporibus, hic repudiandae? Incidunt culpa nisi non quae, explicabo minus eveniet maiores sint tenetur, pariatur iure minima impedit! Sunt harum cum eaque modi maxime.</p>
+    <p>Vel vitae perspiciatis deleniti. Iste tempore quaerat minima, quisquam ullam deleniti non voluptatibus qui, porro illum quidem, quam tempora id recusandae earum rem aliquid repellat doloribus esse harum reprehenderit? Inventore ducimus accusantium unde, atque quidem reiciendis quia obcaecati doloremque? Atque!</p>
+    <p>Sint, pariatur, ut culpa provident qui dolor repellendus accusamus quas autem, mollitia repudiandae porro suscipit aperiam eos obcaecati praesentium minus dicta quasi similique? Laboriosam iure corrupti rem, cumque exercitationem beatae a repellat expedita voluptatum consectetur, nostrum earum ut. Reprehenderit, atque!</p>
+
+    <h2>Lorem, ipsum dolor.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem porro veritatis, vitae neque similique id reiciendis! Voluptatibus, <a href="#">soluta</a>. Explicabo at, reprehenderit accusamus aliquam id aspernatur quam veritatis expedita debitis, distinctio, harum ratione perspiciatis dignissimos ducimus cumque commodi nam inventore blanditiis.</p>
+    <p>Dolorem ducimus minus commodi quod ullam reiciendis enim sit excepturi voluptate, aut fugiat ipsa ipsam voluptas consequuntur nam tempora tenetur totam voluptatem laboriosam nihil, vero perferendis molestiae. Quis, eius. <strong>In blanditiis illum ducimus</strong> ullam quos eaque excepturi ea dicta facilis.</p>
+    <p>Laborum, impedit eligendi earum numquam temporibus nam veniam inventore tempore sapiente, dolore, ea ullam repudiandae. Temporibus exercitationem quasi praesentium voluptates quod voluptatibus aliquid cum ipsam odit delectus soluta saepe sunt fuga, ex atque dolore provident, error distinctio est velit aperiam?</p>
+    <p>Nihil quasi dolorum aliquam veritatis cupiditate alias rerum accusamus suscipit sequi voluptate vero, possimus exercitationem. Eveniet incidunt libero atque a ad quia minus, vel delectus adipisci veritatis, rerum quas pariatur assumenda corrupti iure culpa. Ab magni necessitatibus enim quasi eaque?</p>
+
+
+
+     -->
+
+     <div class="container">
+    <!-- un .container da qualche parte serve sempre per il corretto funzionamento di .row -->
+
+        <div class="row"> <!-- .row è sempre necessario per attivare il sistema di colonne -->
+          
+            <!-- se uso la classe .col da sola ottengo colonne grandi uguali  -->
+            <div class="col">COLONNA 1</div>
+            <div class="col">COLONNA 2</div>
+            <div class="col">COLONNA 3</div>
+            <div class="col">COLONNA 4</div>
+
+        </div>
+
+        <!-- ----------------------------------------------------------------------- -->
+        <!--           posso dare delle dimensioni specifiche alle colonne           -->
+        <!-- ----------------------------------------------------------------------- -->
+
+        <div class="row">
+            <!-- la classe .col seguita dal numero di blocchi che deve occupare -->
+            <div class="col-3">Colonna da 3 elementi</div>
+            <div class="col-9">Colonna da 9 elementi</div>
+        </div>
+
+
+
+        <!-- ----------------------------------------------------------------------- -->
+        <!--               definisco le colonne in base ai breakpoint                -->
+        <!-- ----------------------------------------------------------------------- -->
+
+
+        <!-- <div class="row">
+            <div class="col-md-12 col-lg-4" style="background:red">Colonna A</div>
+            <div class="col-md-6 col-lg-4" style="background:blue">Colonna B</div>
+            <div class="col-md-6 col-lg-4" style="background:green">Colonna C</div>
+        </div>
+ -->
+
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                           COLONNE NIDIFICATE                            -->
+        <!-- ----------------------------------------------------------------------- -->
+
+        <div class="row">
+            <div class="col-md-4" style="background:yellow">
+
+                <div class="row">
+                    <div class="col-6 col-md-4">A</div>
+                    <div class="col-6 col-md-8">B</div>
+                </div>
+          
+            </div>
+            <div class="col-md-4" style="background:skyblue">Colonna 2 </div>
+            <div class="col-md-4" style="background:limegreen">Colonna 3 </div>
+        </div>
+
+
+     </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

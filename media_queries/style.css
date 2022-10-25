@@ -1,0 +1,29 @@
+.box {
+    background:red;
+    font-size: 2rem;
+}
+
+/*dichiaro le regole A PARTIRE DA 960px*/
+@media screen and (min-width: 960px) { /*<---- occhio alla graffa!*/
+
+    /*dentro la media query inserisco i selettori degli elementi che voglio modificare*/
+    .box {
+        background:#83a8fe;
+        color:blue;
+
+    }
+
+    body {
+        background:yellow;
+    }
+} /* <-- Occhio a chiudere la graffa! */
+
+
+@media screen and (min-width: 1200px) {
+    .box {
+        border:10px solid #ffcc00;
+    }
+}
+
+
+

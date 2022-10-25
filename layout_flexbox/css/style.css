@@ -1,0 +1,238 @@
+* {
+    /*TUTTI gli elementi sulla pagina!*/
+    box-sizing: border-box;
+    /*impostiamo un box model più "sensato"*/
+}
+
+body {
+    font-family: 'Radio Canada',sans-serif;
+}
+
+b,strong, h1,h2,h3 {
+    /*tutte le volte che ho un grassetto
+    forzo l'uso dello spessore 600*/
+    font-weight: 600;
+    /*questo per assicurarmi che non vada a cercare lo spessore 700
+    del mio font, che ho deciso di non scaricare*/
+}
+
+a {
+    /*cambio il colore dei link*/
+    color:#CD3642;
+}
+
+img {
+    /*tutte le immagini nei tag IMG saranno fluide*/
+    max-width: 100%;
+    height:auto
+}
+
+
+.container {
+    width: 75%;
+    margin:0 auto; /*primo valore: sopra+sotto | secondo valore: sx+dx*/
+    
+}
+/* -------------------------------------------------------------------------- */
+/*                                HEADER E MENU                               */
+/* -------------------------------------------------------------------------- */
+
+.mainHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+
+.logo {
+    width: 6rem; /*imposto una dimensione al DIV che contiene il logo*/
+}
+
+.logo img {
+    /*rendo fluida l'immagine dentro il DIV .logo*/
+    max-width: 100%;
+}
+
+
+ul.mainMenu {
+    list-style-type: none; /*elimina tutti i segni di elenco (pallini)*/
+    display: flex;
+    padding-left: 0;
+
+}
+
+/*metodo alternativo meno consigliato
+.mainMenu li {
+    display: inline-block;
+}
+*/
+
+ul.mainMenu li {
+    /*tutti gli LI dentro UL con classe mainMenu*/
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+}
+
+ul.mainMenu a {/*tutti i link dentro UL.mainMenu*/
+    text-decoration: none;
+    color:#CD3642;
+    text-transform: uppercase;
+    /*uppercase: tutto maiuscolo
+    lowercase: tutto minuscolo
+    capitalize: iniziali maiuscole
+    */
+
+
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                HERO SECTION                                */
+/* -------------------------------------------------------------------------- */
+
+#hero {
+    background: url('../images/hero_alt.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+
+    height: 36rem; /*forzo un'altezza al DIV*/
+
+    /*per centrare il div figlio (.claim):*/
+    display: flex;
+    justify-content: flex-end; /*allinea a dx su main axis(h)*/
+    align-items: center; /*centra su cross-axis(v)*/
+
+    text-align: left; /*allineo a destra*/
+    /*NOTA: text-align è ereditata dai figli!*/
+
+    margin-top: 2rem; /*distanzio da HEADER*/
+
+}
+
+.claim h1{
+    font-family: 'Caveat',serif;
+    font-size: 3.5rem;
+    color:#CD3642;
+    text-shadow: 6px 2px 13px rgba(150, 150, 150, 0.79);
+    margin-bottom: 0;
+    margin-right: 5rem;
+}
+
+.claim p {
+    font-style: italic;
+    font-size: 1.25rem;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                               SEZIONE RICETTE                              */
+/* -------------------------------------------------------------------------- */
+
+#ricette {
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ricetta {
+    width: 50%; /*voglio disporne 2 per riga*/
+
+    /*imposto le proprietà FLEX per disporre i figli di .ricetta (immagine e testo)*/
+    display: flex;
+    margin-top: 2rem;
+}
+
+.ricettaImg {
+    width: 30%;
+}
+
+.ricettaTxt {
+    width:70%;
+    padding-left: 1rem;
+}
+
+.ricettaTxt h2 {
+    margin-top: 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 SEZIONE BIO                                */
+/* -------------------------------------------------------------------------- */
+
+#bio {
+
+   
+    background: #CD3642;
+    color:#efefef;
+
+    /*distanzio dalle altre sezioni*/
+    margin-top: 4rem;
+   
+    padding:2rem;
+}
+
+#bio .container {
+    /*tutti gli elementi con class "container" dentro l'elemento con id "bio"*/
+    /*per affiancare bioImg e bioTxt devo operare sul loro genitore,
+    quindi assegno display:flex al .container dentro il div #bio*/
+    display: flex;
+    align-items: center; /*allinea verticale*/
+}
+
+
+#bio a {
+    color:white;
+}
+
+.bioImg {
+    width: 30%;
+}
+
+.bioImg img {
+    border-radius:50%;
+    /*da 50% in su l'elemento diventa rotondo*/
+}
+
+.bioTxt {
+    width: 70%;
+    font-size: 1.25rem;
+
+    padding-left: 2rem;
+}
+
+
+
+
+
+
+   
+.bioTxt h2 {
+    font-family: 'Caveat',serif;
+    font-size: 4rem;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   FOOTER                                   */
+/* -------------------------------------------------------------------------- */
+
+.mainFooter {
+    background: #ccc;
+    color:#555;
+
+    /* padding-top:2rem;
+    padding-bottom: 2rem; */
+
+    /*scorciatoia:*/
+    padding:2rem 0; /*primo valore: sopra+sotto | secondo valore: sx+dx*/
+
+    line-height: 1.5rem; /*aumenta lo spazio tra le righe*/
+}
+
+.mainFooter .container {
+    display: flex;
+    justify-content: space-between;
+}
+
