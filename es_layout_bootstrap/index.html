@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Esempio layout Bootstrap</title>
 </head>
 <body>
 
@@ -26,13 +29,13 @@
             HERO
         </section>
 
-        <section id="ristorante">
+        <section id="ristorante" class="mb-5">
             <div class="container">
 
                 <!-- blocco info ristorante -->
-                <div class="ristoranteInfo row">
+                <div class="ristoranteInfo row mb-5">
                     <div class="col-md-4">
-                        <img class="img-fluid" src="https://source.unsplash.com/600x400/?sushi+restaurant" alt="ristorante">
+                        <img class="img-fluid rounded" src="https://source.unsplash.com/600x400/?sushi+restaurant" alt="ristorante">
                     </div>
                     <div class="col-md-8">
                         <h2>Ristorante Sushi Lorem, ipsum.</h2>
@@ -47,9 +50,9 @@
 
 
                 <!-- blocco info ristorante -->
-                <div class="ristoranteInfo row">
-                    <div class="col-md-4">
-                        <img class="img-fluid" src="https://source.unsplash.com/600x400/?japanese+kitchen" alt="ristorante">
+                <div class="ristoranteInfo row mb-5">
+                    <div class="col-md-4 mb-5 mb-md-0">
+                        <img class="img-fluid rounded" src="https://source.unsplash.com/600x400/?japanese+kitchen" alt="ristorante">
                     </div>
                     <div class="col-md-8">
                         <h2>Abbiamo dei cuochi molto bravi.</h2>
@@ -62,14 +65,124 @@
                 </div>
                 <!-- fine blocco ristorante -->
 
+            </div>
+        </section>
 
-                
+
+        <section id="offerte">
+            <div class="container">
+
+                <h2>I piatti del mese</h2>
+
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+
+                    <!-- inizio col -->
+                    <div class="col mb-4">
+                        <!-- inizio card -->
+                        <div class="card">
+                            <img src="https://source.unsplash.com/600x400/?onigiri" class="card-img-top" alt="onigiri">
+                            <div class="card-body">
+                              <h3 class="card-title fs-5">Onigiri</h3>
+                              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ducimus voluptas quaerat?</p>
+                              <a href="#" class="btn btn-primary">Ordina</a>
+                              <a href="#" class="btn btn-primary"> <3 </a>
+                            </div>
+                          </div>
+                          <!-- fine card -->
+                    </div>
+                    <!-- fine col -->
+
+                    <!-- inizio col -->
+                    <div class="col mb-4">
+                        <!-- inizio card -->
+                        <div class="card">
+                            <img src="https://source.unsplash.com/600x400/?maki" class="card-img-top" alt="onigiri">
+                            <div class="card-body">
+                              <h3 class="card-title fs-5">Maki</h3>
+                              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ducimus voluptas quaerat?</p>
+                              <a href="#" class="btn btn-primary">Ordina</a>
+                              <a href="#" class="btn btn-primary"> <3 </a>
+                            </div>
+                          </div>
+                          <!-- fine card -->
+                    </div>
+                    <!-- fine col -->
+
+                    <!-- inizio col -->
+                    <div class="col mb-4">
+                        <!-- inizio card -->
+                        <div class="card">
+                            <img src="https://source.unsplash.com/600x400/?sashimi" class="card-img-top" alt="onigiri">
+                            <div class="card-body">
+                              <h3 class="card-title fs-5">Sashimi</h3>
+                              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ducimus voluptas quaerat?</p>
+                              <a href="#" class="btn btn-primary">Ordina</a>
+                              <a href="#" class="btn btn-primary"> <3 </a>
+                            </div>
+                          </div>
+                          <!-- fine card -->
+                    </div>
+                    <!-- fine col -->
+
+                    <!-- inizio col -->
+                    <div class="col mb-4">
+                        <!-- inizio card -->
+                        <div class="card">
+                            <img src="https://source.unsplash.com/600x400/?uramaki" class="card-img-top" alt="onigiri">
+                            <div class="card-body">
+                              <h3 class="card-title fs-5">Uramaki</h3>
+                              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ducimus voluptas quaerat?</p>
+                              <a href="#" class="btn btn-primary">Ordina</a>
+                              <a href="#" class="btn btn-primary"> <3 </a>
+                            </div>
+                          </div>
+                          <!-- fine card -->
+                    </div>
+                    <!-- fine col -->
+
+                    <!-- inizio col -->
+                    <div class="col mb-4">
+                        <!-- inizio card -->
+                        <div class="card">
+                            <img src="https://source.unsplash.com/600x400/?nigiri" class="card-img-top" alt="onigiri">
+                            <div class="card-body">
+                              <h3 class="card-title fs-5">Nigiri</h3>
+                              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ducimus voluptas quaerat?</p>
+                              <a href="#" class="btn btn-primary">Ordina</a>
+                              <a href="#" class="btn btn-primary"> <3 </a>
+                            </div>
+                          </div>
+                          <!-- fine card -->
+                    </div>
+                    <!-- fine col -->
+
+                    <!-- inizio col -->
+                    <div class="col mb-4">
+                        <!-- inizio card -->
+                        <div class="card">
+                            <img src="https://source.unsplash.com/600x400/?tempura" class="card-img-top" alt="onigiri">
+                            <div class="card-body">
+                              <h3 class="card-title fs-5">Tempura</h3>
+                              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ducimus voluptas quaerat?</p>
+                              <a href="#" class="btn btn-primary">Ordina</a>
+                              <a href="#" class="btn btn-primary"> <3 </a>
+                            </div>
+                          </div>
+                          <!-- fine card -->
+                    </div>
+                    <!-- fine col -->
 
 
 
+                 
+
+
+                </div>
 
             </div>
         </section>
+
+
 
     </main>
 
