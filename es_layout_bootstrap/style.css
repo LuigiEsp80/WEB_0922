@@ -8,6 +8,17 @@
     height:100vh;
 }
 
+.navbar-brand img{
+    height:3rem;
+}
+
+.navbar-brand svg {
+    height:4rem;
+}
+
+.navbar-brand .st0 {
+    fill:#fea23f;
+}
 
 
 /* -------------------------------------------------------------------------- */
@@ -26,6 +37,10 @@
 
 .heroBg {
     background-image:url('sushi-bg.jpg');
+}
+
+.navbar-brand img{
+    height:4rem;
 }
 
 }
