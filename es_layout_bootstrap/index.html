@@ -17,12 +17,64 @@
 <body>
 
     <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3">LOGO</div>
-                <div class="col-lg-9">MENU</div>
+        <nav class="navbar navbar-expand-lg bg-light">
+
+            <!-- rispetto all'esempio sulla documentazione di BS ho cambiato 
+            la classe .container-fluid in .container, per stringere il DIV -->
+
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="logo_png.png" alt="Ristorante Sushi Bar">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Cambio me-auto (margin right:auto) in ms-auto (margin-left:auto)
+                per spostare il blocco di menu a destra. -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Menu</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Eventi</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Contatti</a>
+                  </li>
+
+
+                  <li class="nav-item dropdown">
+
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Le nostre sedi
+                    </a>
+
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Torino Via Roma</a></li>
+                      <li><a class="dropdown-item" href="#">Moncalieri</a></li>
+                      <li><a class="dropdown-item" href="#">Venaria</a></li>
+                      <li><a class="dropdown-item" href="#">Rivalta</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Genova</a></li>
+                      <li><a class="dropdown-item" href="#">Savona</a></li>
+                      <li><a class="dropdown-item" href="#">Imperia</a></li>
+                    </ul>
+
+                  </li>
+                
+                </ul>
+              
+              </div>
             </div>
-        </div>
+          </nav>
     </header>
 
     <main>
@@ -193,23 +245,35 @@
 
     </main>
 
-    <footer id="mainFooter" class="bg-dark text-muted"> <!-- sfondo scuro, testo grigio intermedio -->
+    <footer id="mainFooter" class="bg-dark text-muted py-3"> <!-- sfondo scuro, testo grigio intermedio -->
 
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
+            <!-- per allineare al centro in verticale uso le classi di flexbox.
+            NOTA: d-flex è ridondante perché ROW è già un elemento con display:flex -->
+            
+            <div class="row d-flex align-items-center">
+
+                <!-- colonna da 4/12 su large, con testo centrato da mobile e allineato a sinistra su large -->
+                <div class="col-lg-4 text-center text-lg-start">
                     <strong>Ristorante Sushi Boh</strong> - 
                     P.I. 23489723487<br>
                     Via Roma 12, 10100 Torino<br>
                     +39 340 33 92 082
                 </div>
-                <div class="col-lg-4">
+
+                <!-- colonna da 4/12 su large, con testo centrato su tutti i breakpoint -->
+            
+                <div class="col-lg-4 text-center my-3 my-lg-0">
                     <i class="bi bi-instagram"></i>
                     <i class="bi bi-tiktok"></i>
                     <i class="bi bi-facebook"></i>
                 </div>
-                <div class="col-lg-4">Website By Corso Web<br>
-                    Cookies | Privacy | Dati societari</div>
+
+                   <!-- colonna da 4/12 su large, con testo centrato da mobile e allineato a destra su large -->
+                <div class="col-lg-4 text-center text-lg-end">Website By Corso Web<br>
+                   Dati societari<br>
+                Cookies | Privacy
+                </div>
             </div>
         </div>
 
