@@ -1,0 +1,10 @@
+#hero {
+    /*sovrappongo l'immagine al colore di sfondo*/
+    /* background:url('img/hero-bg.png'), #162336; */
+    background:url('img/hero-bg.png'), linear-gradient(0deg, rgb(19, 31, 50) 0%, rgb(6, 50, 93) 100%);
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color:#efefef;
+}
