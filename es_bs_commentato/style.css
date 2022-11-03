@@ -1,0 +1,119 @@
+#hero {
+    background-image: url('img/hero-mobile.jpg'); /*questa verrà sovrascritta dalle varie media queries*/
+   
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+
+    height:100vh;
+
+
+}
+
+#news {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+#contatti {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+
+
+
+
+#spacer {
+
+    background-image: url('img/spacer-mobile.jpg');
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+ /* con background-attachment:fixed evito che il bg scorra sulla pagina 
+    e ottengo un effetto "pseudo-parallasse" */
+        background-attachment: fixed;
+
+
+    height:25rem;
+
+}
+
+#offerte {
+
+    background-image: linear-gradient(
+        20deg,
+        hsl(240deg 29% 77%) 0%,
+        hsl(259deg 33% 77%) 10%,
+        hsl(279deg 37% 77%) 20%,
+        hsl(299deg 41% 77%) 31%,
+        hsl(318deg 45% 76%) 43%,
+        hsl(337deg 50% 76%) 54%,
+        hsl(356deg 54% 76%) 66%,
+        hsl(16deg 58% 76%) 77%,
+        hsl(35deg 63% 76%) 89%,
+        hsl(55deg 66% 75%) 100%
+      );
+
+
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+
+
+
+}
+
+.sectionTitle {
+    border-bottom:3px dotted #990000;
+}
+
+
+.buttonWrapper button {
+    width: 100%;
+}
+
+
+/* textarea {
+    height: 11rem;
+} */
+
+
+/* -------------------------------------------------------------------------- */
+/*                           MEDIA QUERY PER MEDIUM                           */
+/* -------------------------------------------------------------------------- */
+
+@media (min-width: 768px) { 
+
+    #hero {
+        background-image: url('img/hero-tablet.jpg');
+    }
+
+    #spacer {
+        background-image: url('img/spacer-desktop.jpg');
+        height:30rem;
+    }
+
+    .buttonWrapper button {
+        width: auto;
+    }
+
+
+ }
+
+
+/* -------------------------------------------------------------------------- */
+/*                            MEDIA QUERY PER LARGE                           */
+/* -------------------------------------------------------------------------- */
+
+
+@media (min-width: 992px) { 
+
+    #hero {
+        background-image: url('img/hero-desktop.jpg');
+    }
+
+ }
+

@@ -19,39 +19,205 @@
 
 <main>
 
-    <section id="hero" class="position-relative">
-        
+    <!-- se uso position:absolute sulla cta, allora devo dare position-relative a questo elemento -->
+    <section id="hero" class="position-relative d-flex align-items-center justify-content-center">   
+   
+        <!-- NOTA: usando flexbox non serve più position-relative. Era utile solo per gestire il position:absolute. 
+    Se lo lascio comunque non fa danno. -->
 
       <!--   Se voglio cambiare le immagini a seconda della dimensione schermo, posso usare PICTURE:
         Con <source> definisco le immagini per le dimensioni schermo, con IMG definisco l'immagine di default a partire
-        da 0px in su        -->  
-
-        
-        <picture>
-
+        da 0px in su     -->  
+       
+        <!-- <picture>
             <source srcset="img/hero-desktop.jpg" media="(min-width:992px)">
-
             <source srcset="img/hero-tablet.jpg" media="(min-width:640px)">
-        
             <img src="img/hero-mobile.jpg" alt="hero image" class="img-fluid">
-        </picture>
+        </picture> -->
 
+        <!-- sulla CTA uso position:absolute -->
 
-        <div class="cta position-absolute top-50 start-50 translate-middle text-center">
+        <!-- <div class="cta position-absolute top-50 start-50 translate-middle text-center">
             <h1>On The Road</h1>
             <p>Lorem ipsum dolor sit amet.</p>
             <a href="#" class="btn btn-primary">Click me!</a>
-        </div>
+        </div> -->
+
+
+     <div class="cta text-center text-light">
+            <h1>On The Road</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a href="#" class="btn btn-primary">Click me!</a>
+    </div>
+
+
 
     </section>
 
-    <section id="news"></section>
+    <section id="news">
+        <div class="container">
+           <!--  NOTIZIA 1: -->
+            <div class="row align-items-center">
 
-    <section id="spacer"></section>
+                <div class="col-md-3">
+                    <img src="img/img1.jpg" alt="news 1" class="img-fluid">
+                </div>
+                <div class="col-md-9 ps-md-5 mt-3 mt-md-0">
+<!--                     margini e padding:
+                    - padding START (left!) di 5 unità (=3rem) SOLO da medium in su
+                    - margin TOP di 3 unità (=1rem) da mobile fino a medium (su md cambio e metto margin top 0)
+ -->
+                    <h2>Lorem, ipsum dolor.</h2>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae veniam fugit eveniet error dolor perferendis perspiciatis veritatis placeat? Ipsum, quos dignissimos deserunt accusamus fugit debitis laudantium facilis aut incidunt ea quisquam error quam dolor numquam odio voluptates quaerat nisi praesentium nihil culpa provident amet tempore. Aliquid tempora ex commodi minima tempore ea eos totam, molestiae similique possimus quam saepe dignissimos?</p>
 
-    <section id="offerte"></section>
+                  <a href="#" class="btn btn-primary">Read more</a>
+                </div>
 
-    <section id="contatti"></section>
+            </div>
+            <!-- fine notizia 1 -->
+
+           <!--  NOTIZIA 2: -->
+            <div class="row align-items-center mt-5">
+
+                <div class="col-md-3">
+                    <img src="img/img2.jpg" alt="news 1" class="img-fluid">
+                </div>
+                <div class="col-md-9 ps-md-5 mt-3 mt-md-0">
+<!--                     margini e padding:
+                    - padding START (left!) di 5 unità (=3rem) SOLO da medium in su
+                    - margin TOP di 3 unità (=1rem) da mobile fino a medium (su md cambio e metto margin top 0)
+ -->
+                    <h2>Lorem, ipsum dolor.</h2>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae veniam fugit eveniet error dolor perferendis perspiciatis veritatis placeat? Ipsum, quos dignissimos deserunt accusamus fugit debitis laudantium facilis aut incidunt ea quisquam error quam dolor numquam odio voluptates quaerat nisi praesentium nihil culpa provident amet tempore. Aliquid tempora ex commodi minima tempore ea eos totam, molestiae similique possimus quam saepe dignissimos?</p>
+
+                  <a href="#" class="btn btn-primary">Read more</a>
+                </div>
+
+            </div>
+            <!-- fine notizia 2 -->
+        </div>
+    </section>
+
+    <section id="spacer">
+        <!-- VEDI CSS -->
+    </section>
+
+    <section id="offerte">
+<div class="container"> 
+ 
+    <div class="sectionTitle mx-xl-5 mb-5">
+        <h2>Offerte</h2>
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-4">
+            <div class="card mx-xl-5">
+                <img src="img/card1.jpg" class="card-img-top" alt="offerta viaggio 1">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card mx-xl-5">
+                <img src="img/card2.jpg" class="card-img-top" alt="offerta viaggio 1">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card mx-xl-5">
+                <img src="img/card3.jpg" class="card-img-top" alt="offerta viaggio 1">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+        </div>
+
+        
+
+    </div>
+
+</div>     
+
+       
+
+    </section>
+
+    <section id="contatti">
+
+        <div class="container">
+            <div class="sectionTitle mb-5">
+                <h2>Contatti</h2>
+            </div>
+
+
+            <form action="">
+
+                <div class="row">
+                    <!-- colonna sx da medium -->
+                    <div class="col-md-6">
+
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" name="nome" id="nome" class="form-control">
+              
+                        <label for="email" class="form-label">E-Mail</label>
+                        <input type="email" name="email" id="email" class="form-control">
+        
+                        <label for="phone" class="form-label">Telefono</label>
+                        <input type="tel" name="phone" id="phone" class="form-control">
+                        
+                    </div>
+
+                    <!-- colonna dx da medium -->
+                    <div class="col-md-6 d-flex flex-column">
+                        <!-- imposto flex incrociando l'asse: sto lavorando con l'asse Y come asse principale.
+                        la classe flex-column equivale a impostare flex-direction:column -->
+
+                        <label for="message" class="form-label">Il tuo messaggio</label>
+
+                        <!--  NOTA: flex-grow-1 fa allargare l'elemento finché trova spazio. Normalmente
+                        lavora sull'asse orizzontale, ma qua abbiamo invertito gli assi con flex-column, 
+                        quindi si allarga fino a occupare tutto lo spazio in VERTICALE.
+                         -->
+                        <textarea name="message" id="message" class="form-control flex-grow-1"></textarea>
+
+                    </div>
+                </div>
+
+                
+
+                <div class="d-md-flex justify-content-between mt-3">
+                   
+                    <div>
+                        <input type="checkbox" name="privacy" id="privacy" value="yes" class="form-check-input">
+                        <label for="privacy" class="form-check-label">Accetto la normativa sulla Privacy</label>
+                    </div>
+
+                    <div class="buttonWrapper">
+                        <button type="submit" class="btn btn-primary">Invia</button>
+                    </div>
+                </div>
+
+
+
+
+            </form>
+
+
+        </div>
+
+    </section>
 
 </main>
 
