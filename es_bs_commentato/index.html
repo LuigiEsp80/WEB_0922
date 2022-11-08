@@ -287,10 +287,8 @@
 const nav = document.querySelector('.mainHeader');
 //definisco l'elemento da modificare (contenitore navbar)
 
-let navTop = nav.offsetTop; //prendo l'altezza della navbar
-
 function fixedNav() {
-if (window.scrollY > navTop) {     //se lo scroll verticale è maggiore dell'altezza della navbar
+if (window.scrollY) {     //se sta scrollando
    nav.classList.add('scrolled');  //allora aggiungi una classe alla navbar
 } else {
    nav.classList.remove('scrolled');    //altrimenti togli la classe  
