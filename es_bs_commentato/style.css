@@ -1,3 +1,44 @@
+/* -------------------------------------------------------------------------- */
+/*                                    FONT                                    */
+/* -------------------------------------------------------------------------- */
+
+body {
+    font-family: 'Epilogue', sans-serif;
+}
+
+h1,h2 {
+    font-family: 'Pacifico', serif;
+}
+
+.cta {
+    font-size: 1.5rem;
+    z-index:1;
+}
+
+.cta h1 { /*solo H1 dentro il div .cta nella hero */
+    font-size: 4rem;
+}
+
+
+.logo {
+    height:3rem;
+    width: auto;
+}
+
+.mainHeader {
+
+    transition: background 1s;
+    /*transition fa in modo che quando le proprietà dell'elemento cambiano, lo facciano
+    con un'animazione*/
+
+    /*se definisco una proprietà (es.background), la transizione vale solo su quella proprietà.
+    Il valore di default è "all" che agisce su tutto.*/
+}
+
+.mainHeader.scrolled { /* .mainHeader + la classe .scrolled */
+    background: rgba(255,255,255,0.7)
+}
+
 #hero {
     background-image: url('img/hero-mobile.jpg'); /*questa verrà sovrascritta dalle varie media queries*/
    
@@ -10,6 +51,29 @@
 
 
 }
+
+#hero::before {
+    /*::before crea un pseudoelemento html, figlio del selettore a cui è applicato, e lo posiziona 
+    subito dopo il tag di apertura*/
+
+    content:''; /*content va sempre indicato, anche se vuoto*/
+    display: block;
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+   background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,0) 69%, rgba(255,255,255,0.7385547969187676) 100%);
+
+}
+
+
+/* ::after fa la stessa cosa ma posizionando lo pseudo-elemento subito prima della
+chiusura dell'elemento genitore*/
+
+
 
 #news {
     padding-top: 5rem;
@@ -35,7 +99,8 @@
 
  /* con background-attachment:fixed evito che il bg scorra sulla pagina 
     e ottengo un effetto "pseudo-parallasse" */
-        background-attachment: fixed;
+   
+    background-attachment: fixed;
 
 
     height:25rem;
