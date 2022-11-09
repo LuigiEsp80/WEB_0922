@@ -25,6 +25,8 @@ h1,h2 {
     width: auto;
 }
 
+
+
 .mainHeader {
 
     transition: background 1s;
@@ -38,6 +40,8 @@ h1,h2 {
 .mainHeader.scrolled { /* .mainHeader + la classe .scrolled */
     background: rgba(255,255,255,0.7)
 }
+
+
 
 #hero {
     background-image: url('img/hero-mobile.jpg'); /*questa verrà sovrascritta dalle varie media queries*/
