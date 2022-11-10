@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esempio Carousel con Swiper.js</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+
+                    <div class="slideWrapper d-flex">
+                        <div class="slideImg">
+                            <img class=img-fluid" src="https://source.unsplash.com/600x400/?albuquerque" alt="">
+                        </div>
+                        <div class="slideTxt ms-5">
+                            <h2>Albuquerque</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, inventore officia illo ea voluptatibus rerum? Ex expedita quia esse harum veritatis necessitatibus pariatur, eligendi dolorem aliquam cumque doloribus inventore autem fugit magni, saepe dolore labore iusto repellat deleniti. Natus, sequi!</p>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="https://source.unsplash.com/1920x1080/?santa+fe" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="img-fluid" src="https://source.unsplash.com/1920x1080/?roswell" alt="">
+                </div>
+
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            //effect: 'fade',
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
+
+</body>
+
+</html>
