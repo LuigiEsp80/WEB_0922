@@ -98,13 +98,13 @@
                             </div>
                             <div class="cartQty col-6 col-lg-3 d-flex">
 
-                                <button class="btn btn-link">
+                                <button class="btn btn-link" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
                                     <i class="bi bi-dash-circle"></i>
                                 </button>
 
-                                <input type="number" name="qty" id="qty" class="form-control form-control-sm">
+                                 <input type="number" value="1" name="qty" id="qty-id1" class="form-control form-control-sm">
 
-                                <button class="btn btn-link">
+                                <button class="btn btn-link" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
                                     <i class="bi bi-plus-circle"></i>
                                 </button>
 
@@ -121,6 +121,79 @@
                     <!-- FINE ELEMENTO CARRELLO --> 
 
                     <hr class="my-5">
+
+
+                    <!-- ELEMENTO CARRELLO -->
+                    <div class="cartItem">
+                        <div class="row align-items-center">
+                            <div class="cartImg col-12 col-lg-2">
+                                <img class="w-100" src="img/alicia.jpg" alt="Alicia Keys - Alicia">
+                            </div>
+                            <div class="cartFormat col-6 col-lg-3">
+                                <div class="text-muted">Vinile</div>
+                                <div class="discTitle">Alicia</div>
+                            </div>
+                            <div class="cartQty col-6 col-lg-3 d-flex">
+
+                                <button class="btn btn-link" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                                    <i class="bi bi-dash-circle"></i>
+                                </button>
+
+                                 <input type="number" value="1" name="qty" id="qty-id2" class="form-control form-control-sm">
+
+                                <button class="btn btn-link" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                                    <i class="bi bi-plus-circle"></i>
+                                </button>
+
+                            </div>
+                            <div class="cartPrice col-6 col-lg-2 ">
+                                <div>€ 20.00</div>
+                            </div>
+
+                            <div class="cartRemove col-6 col-lg-2 text-end">
+                                <i class="bi bi-trash"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FINE ELEMENTO CARRELLO --> 
+
+                    <hr class="my-5">
+
+                    <!-- ELEMENTO CARRELLO -->
+                    <div class="cartItem">
+                        <div class="row align-items-center">
+                            <div class="cartImg col-12 col-lg-2">
+                                <img class="w-100" src="img/radiohead.jpg" alt="Radiohead - OK Computer">
+                            </div>
+                            <div class="cartFormat col-6 col-lg-3">
+                                <div class="text-muted">Vinile</div>
+                                <div class="discTitle">Ok Computer</div>
+                            </div>
+                            <div class="cartQty col-6 col-lg-3 d-flex">
+
+                                <button class="btn btn-link" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                                    <i class="bi bi-dash-circle"></i>
+                                </button>
+
+
+
+                                 <input type="number" value="1" name="qty" id="qty-id3" class="form-control form-control-sm">
+
+                                <button class="btn btn-link" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                                    <i class="bi bi-plus-circle"></i>
+                                </button>
+
+                            </div>
+                            <div class="cartPrice col-6 col-lg-2 ">
+                                <div>€ 20.00</div>
+                            </div>
+
+                            <div class="cartRemove col-6 col-lg-2 text-end">
+                                <i class="bi bi-trash"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FINE ELEMENTO CARRELLO --> 
 
 
 
