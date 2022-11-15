@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esempio Carousel con Swiper.js</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+
+                <!-- Tutto ciò che sta dentro questo div è "scorrevole" -->
+                <div class="swiper-slide">
+                  <!-- qui si crea l'elemento con ::before -->
+                  <img class="img-fluid" src="https://source.unsplash.com/800x800?bear" alt="">
+
+                  <div class="slideText">
+                    <h2>Orso!</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, pariatur.</p>
+                  </div>
+
+                  <!-- qua si crea l'elemento con :after -->
+
+                </div>
+                <div class="swiper-slide">
+                  <!-- qui si crea l'elemento con ::before -->
+                  <img class="img-fluid" src="https://source.unsplash.com/800x800?fox" alt="">
+
+                  <div class="slideText">
+                    <h2>Volpe!</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, pariatur.</p>
+                  </div>
+
+                  <!-- qua si crea l'elemento con :after -->
+
+                </div>
+                <div class="swiper-slide">
+                  <!-- qui si crea l'elemento con ::before -->
+                  <img class="img-fluid" src="https://source.unsplash.com/800x800?squirrel" alt="">
+
+                  <div class="slideText">
+                    <h2>Volpe!</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, pariatur.</p>
+                  </div>
+
+                  <!-- qua si crea l'elemento con :after -->
+
+                </div>
+                <div class="swiper-slide">
+                  <!-- qui si crea l'elemento con ::before -->
+                  <img class="img-fluid" src="https://source.unsplash.com/800x800?mountain+lion" alt="">
+
+                  <div class="slideText">
+                    <h2>Mountain Lion</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, pariatur.</p>
+                  </div>
+
+                  <!-- qua si crea l'elemento con :after -->
+
+                </div>
+                <div class="swiper-slide">
+                  <!-- qui si crea l'elemento con ::before -->
+                  <img class="img-fluid" src="https://source.unsplash.com/800x800?wild+boar" alt="">
+
+                  <div class="slideText">
+                    <h2>Cinghiale</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, pariatur.</p>
+                  </div>
+
+                  <!-- qua si crea l'elemento con :after -->
+
+                </div>
+                <div class="swiper-slide">
+                  <!-- qui si crea l'elemento con ::before -->
+                  <img class="img-fluid" src="https://source.unsplash.com/800x800?raccoon" alt="">
+
+                  <div class="slideText">
+                    <h2>Procione</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, pariatur.</p>
+                  </div>
+
+                  <!-- qua si crea l'elemento con :after -->
+
+                </div>
+                <div class="swiper-slide">
+                  <!-- qui si crea l'elemento con ::before -->
+                  <img class="img-fluid" src="https://source.unsplash.com/800x800?chipmunk" alt="">
+
+                  <div class="slideText">
+                    <h2>Scoiattolo 2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, pariatur.</p>
+                  </div>
+
+                  <!-- qua si crea l'elemento con :after -->
+
+                </div>
+              
+
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            //effect: 'fade',
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            // scrollbar: {
+            //     el: '.swiper-scrollbar',
+            // },
+
+            //definisco le opzioni base da SMALL in su
+
+            slidesPerView: 1,
+            //spaceBetween non è obbigatorio!
+            spaceBetween:10,
+
+            //definisco come si comporta sui vari schermi
+            breakpoints : {
+                768: {
+                    slidesPerView: 2,
+                    //spaceBetween non è obbigatorio!
+                    spaceBetween:20
+                },
+                1200: {
+                    slidesPerView:4,
+                    spaceBetween:20
+                }
+            }
+
+
+
+
+        });
+    </script>
+
+</body>
+
+</html>

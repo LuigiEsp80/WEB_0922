@@ -1,0 +1,47 @@
+
+
+.swiper-slide {
+    position:relative;
+
+    /*in alternativa, applico la classe 
+    position-relative all'elemento .swiper-slide sull'HTML*/
+}
+
+.slideText {
+    /* in alternativa, applico all'elemento .slideText le classi
+    position-absolute bottom-0 start-0 */
+    position: absolute;
+    bottom:0;
+    padding:1rem;
+    color:#fff;
+
+}
+
+.swiper-slide::before {
+    content:'';
+    display: block;
+    width:100%;
+    height:50%;
+   
+    position:absolute; /*sovrappongo all'immagine */
+    bottom:0; /*inizia a disegnare dal basso */
+
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.6923144257703081) 0%, rgba(0,0,0,0) 100%);
+}
+
+@media screen and (min-width:1200px) {
+    
+    .slideText {
+        position:static; /*elimina position:absolute riportando al valore di default*/
+        color:black; /*cambia colore del testo */
+
+        padding:1rem 0;
+    }
+
+    .swiper-slide::before {
+        /*nascondo l'effetto overlay */
+        display: none;
+    }
+
+}
