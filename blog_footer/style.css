@@ -1,0 +1,27 @@
+.footerTop {
+    background:#333;
+    color:#fff;
+}
+
+.footerLinks ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footerTitle {
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              FOOTER INFERIORE                              */
+/* -------------------------------------------------------------------------- */
+
+.footerBottom {
+    background: #222;
+    color:#eee;
+    text-align: center;
+
+    padding:2rem;
+}
